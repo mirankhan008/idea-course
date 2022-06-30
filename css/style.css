@@ -1,0 +1,129 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Top-Player */
+.top-player{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.top-player-h1, .top-blog-h1, .latest-course-h1{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+     color: #562EFF;
+     padding-left: 50px;
+     margin-top: 3px;
+}
+.container{
+
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    /* height: 679px; */
+    margin-top: 21px;
+
+}
+.container-player{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr ; */
+    grid-row-gap: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px;
+    margin: 10px; */
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    padding-left: 10px;
+    font-size: 18px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 30px;
+}
+
+/* top blog style  */
+.top-blog{
+
+}
+.top-blog-h1{
+
+}
+.container-blog{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-row: 26px;
+}
+.blog{
+    display: flex;
+}
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-author{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+.blog-author a{
+    text-decoration: none;
+    color: #562EFF;
+}
+/* latest course  */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:20px ;
+    box-shadow: #d87676;
+}
+.course-lastline{
+    display: flex;
+    align-items: center;
+    
+}
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color:  #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.course-duration{
+    border: 1px solid chocolate;
+    background-color: chocolate;
+    border-radius: 28px;
+    margin-left: 10px;
+    padding: 1px 19px;
+}
+span{
+    padding-left: 5px;
+}
