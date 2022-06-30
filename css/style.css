@@ -60,12 +60,12 @@ hr{
 }
 
 /* top blog style  */
-.top-blog{
+/* .top-blog{
 
-}
-.top-blog-h1{
+} */
+/* .top-blog-h1{
 
-}
+} */
 .container-blog{
     display: grid;
     grid-template-columns:repeat(2,1fr);
@@ -126,4 +126,41 @@ hr{
 }
 span{
     padding-left: 5px;
+}
+
+/* media queries Mobile */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .container-player, .blog, .courses{
+        grid-template-columns: repeat(1, 1fr) ;
+    }
+    .top-player-h1{
+       display: flex;
+        justify-content: center;
+    }
+    /* .container-blog{
+        grid-template-columns: repeat(1, 1fr) ;
+        justify-content: center;
+        align-items: center;
+    } */
+    .player,.blog{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+    .container-blog{
+        display: inline-block;
+    }
+}
+/* media queries tablet */
+@media only screen and (min-width:688px) and (max-width: 992px){
+    .container{
+        width: 100%;
+    }
+    .container-player, .blog, .courses{
+        grid-template-columns: repeat(2, 1fr) ;
+    }
 }
